@@ -1,0 +1,21 @@
+syncpath - Change log:
+
+* version 0.4:
+	- Added the option "-s" to skip symbolic links (in Linux).
+	- Added the option "-L" to append log files (whereas "-l" overwrites an existing log).
+	- Created the Subversion (SVN) repository at sourceforge.
+	- Makefile fixed to enable C++ compiler options (-Wall, ...)
+
+* version 0.3:
+	- The access time of files is not checked after copying it to a target file to avoid errors in old FAT32 filesystems where this
+	   data is not maintained.
+	- Statistics at the end of the program now show the number of new, updated, and deleted files.
+	
+* version 0.2:
+	- Now all the file/directory copy operations are performed directly from native C code, avoiding non-portable system calls.
+	- The attributes of files (read-only, system, hidden,etc...) are now also maintained (Windows only).
+	- Bug fixed for Linux when directories/files contain the special character "$".
+
+* version 0.1:
+	- Initial release.
+
